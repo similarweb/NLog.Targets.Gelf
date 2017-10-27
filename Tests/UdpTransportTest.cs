@@ -56,7 +56,7 @@ namespace NLog.Targets.Gelf.UnitTest
                 };
                 target.WriteLogEventInfo(new LogEventInfo());
 
-                transportClient.Verify(t => t.Send(It.IsAny<byte[]>(), It.IsAny<Int32>(), It.IsAny<IPEndPoint>()), Times.Exactly(2));
+                transportClient.Verify(t => t.Send(It.IsAny<byte[]>(), It.IsAny<Int32>(), It.IsAny<IPEndPoint>()), Times.AtLeast(2));
                 converter.Verify(c => c.GetGelfJson(It.IsAny<LogEventInfo>(), It.IsAny<string>()), Times.Once());
             }
         }
