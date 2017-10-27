@@ -3,6 +3,17 @@
   <PropertyGroup>
     <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <Authors>vladsp</Authors>
+    <Version>1.0.1-pre</Version>
+    <Description>Netstandard2.0-compatible version of NLog.Targets.Gelf</Description>
+    <PackageLicenseUrl>https://github.com/similarweb/NLog.Targets.Gelf/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/similarweb/NLog.Targets.Gelf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/similarweb/curly</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Netstandard2.0</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        
   </PropertyGroup>
 
   <ItemGroup>

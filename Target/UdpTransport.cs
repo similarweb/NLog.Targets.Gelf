@@ -111,7 +111,7 @@ namespace NLog.Targets.Gelf
         private static byte[] CompressMessage(String message)
         {
             var compressedMessageStream = new MemoryStream();
-            using (var gzipStream = new GZipStream(compressedMessageStream, CompressionLevel.Optimal))
+            using (var gzipStream = new GZipStream(compressedMessageStream, CompressionMode.Compress))
             {
                 var messageBytes = Encoding.UTF8.GetBytes(message);
                 gzipStream.Write(messageBytes, 0, messageBytes.Length);
